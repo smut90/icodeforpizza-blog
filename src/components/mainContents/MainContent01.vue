@@ -24,16 +24,16 @@
                     },
                     cardSeriesStyle: 'background: linear-gradient(90deg, #141e30 0%, #243b55 100%); box-shadow: 0 2px 4px 0 rgba(0,0,0,.15); flex: 0 0 350px; flex-grow: 1; max-width: 300px; max-height: 350px; padding-bottom: 25px',
                     articles: [
+                        // {
+                        //     published: 'May 06, 2019',
+                        //     title: 'Go Concurrency, things to know',
+                        //     subtitle: 'everything you need to know about go concurrency',
+                        //     tags: ['goroutines', 'channels'],
+                        //     cardNo: 9,
+                        //     articleNo: 'article_v00008'
+                        // },
                         {
-                            published: 'April 05, 2020',
-                            title: 'Go Concurrency, things to know',
-                            subtitle: 'everything you need to know about go concurrency',
-                            tags: ['goroutines', 'channels'],
-                            cardNo: 9,
-                            articleNo: 'article_v00008'
-                        },
-                        {
-                            published: 'April 03, 2020',
+                            published: 'May 12, 2019',
                             title: 'Everything you need to know about creating a RESTful Api in Go — Part V',
                             subtitle: 'detailed overview on consuming an external rest apis',
                             tags: ['3rd party', 'json', 'rest'],
@@ -41,7 +41,7 @@
                             articleNo: 'article_v00007'
                         },
                         {
-                            published: 'April 03, 2020',
+                            published: 'May 01, 2019',
                             title: 'Everything you need to know about creating a RESTful Api in Go — Part IV',
                             subtitle: 'detailed overview on integrating a postgresSQL database',
                             tags: ['database', 'postgres'],
@@ -49,7 +49,7 @@
                             articleNo: 'article_v00006'
                         },
                         {
-                            published: 'Mar 23, 2020',
+                            published: 'Apr 21, 2019',
                             title: 'Everything you need to know about creating a RESTful Api in Go — Part III',
                             subtitle: 'detailed overview on integrating swagger',
                             tags: ['swagger', 'api'],
@@ -57,7 +57,7 @@
                             articleNo: 'article_v00005'
                         },
                         {
-                            published: 'Mar 05, 2020',
+                            published: 'Apr 19, 2019',
                             title: 'Everything you need to know about creating a RESTful Api in Go — Part II',
                             subtitle: 'detailed overview on how to make the go endpoints restful',
                             tags: ['restful', 'endpoints'],
@@ -65,7 +65,7 @@
                             articleNo: 'article_v00004'
                         },
                         {
-                            published: 'Feb 01, 2020',
+                            published: 'Apr 15, 2019',
                             title: 'Everything you need to know about creating a RESTful Api in Go — Part I',
                             subtitle: 'detailed overview on go internal server',
                             tags: ['internal', 'server'],

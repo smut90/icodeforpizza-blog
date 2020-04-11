@@ -15,6 +15,11 @@
 
   export default {
     name: 'Home',
+    metaInfo: {
+      title: 'Home | I Code for Pizza',
+      // override the parent template and just use the above title only
+      titleTemplate: null
+    },
     props: {
       msg: String
     },

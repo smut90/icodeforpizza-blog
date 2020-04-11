@@ -12,8 +12,10 @@
     "core-js": "^3.6.4",
     "highlight.js": "^9.18.1",
     "vue": "^2.6.11",
+    "vue-gtag": "^1.6.2",
     "vue-highlight.js": "^3.1.0",
     "vue-highlightjs": "^1.3.3",
+    "vue-meta": "^2.3.3",
     "vue-scrollto": "^2.17.1"
   },
   "devDependencies": {

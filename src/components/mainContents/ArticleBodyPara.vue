@@ -3,7 +3,7 @@
         <div class="col-md-12">
             <slot></slot>
             <p :style="style">
-                {{para}} <span v-if="link" @click.stop.prevent="navigateTo(link)" style="border-bottom: 1px solid black; cursor: pointer;">link</span>
+                {{para}}
             </p>
         </div>
     </div>
@@ -14,13 +14,7 @@
         name: "ArticleBodyPara",
         props: {
             para: String,
-            style: String,
-            link: String
-        },
-        methods:{
-            navigateTo(link){
-                window.location.href = link;
-            },
+            style: String
         }
     }
 </script>

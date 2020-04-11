@@ -17,6 +17,10 @@
 
     export default {
         name: "Article_About",
+        metaInfo: {
+            // title will be injected into parent titleTemplate
+            title: 'About Author'
+        },
         components: {
             NavDesign,
             HeaderArticle,

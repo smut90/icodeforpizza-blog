@@ -2,10 +2,10 @@
     <div>
         <NavDesign />
         <HeaderArticle
-                series="React"
-                main-title="Everything you need to know about React"
-                subtitle="building a practical react app, step by step guide"
-                published="Apr 5, 2020"
+                series="Go Lang"
+                main-title="Everything you need to know about creating a RESTful Api in Go — Part II"
+                subtitle="detailed overview on how to make the Go endpoints RESTful"
+                published="Apr 19, 2019"
                 background-style="background-color: #25274d;"
         />
         <ArticleBody />
@@ -16,14 +16,13 @@
 <script>
     import NavDesign from '../../topNavBars/NavDesign01'
     import HeaderArticle from '../../headers/HeaderArticle'
-    import ArticleBody from './articleBody/ArticleBody_0'
+    import ArticleBody from './articleBody/ArticleBody_3'
     import Footer from '../../footers/FooterDesign01'
 
     export default {
-        name: "Article_0",
+        name: "Article_3",
         metaInfo: {
-            // title will be injected into parent titleTemplate
-            title: 'React - Building a react app'
+            title: 'Go - RESTFul api endpoints'
         },
         components: {
             NavDesign,

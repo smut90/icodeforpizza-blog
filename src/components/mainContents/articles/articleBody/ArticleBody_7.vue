@@ -1,14 +1,14 @@
 <template>
     <div class="article-body">
         <div class="left-sidebar" style="color: #141e30;">
-            <div class="container" style="background: linear-gradient(90deg, #141e30 0%, #243b55 100%); border-radius: 5px; padding: 10px">
+            <div class="container d-none d-md-block" style="background-color: #25274d; height: 100vh; padding: 6vh 10px 10px; font-family: Montserrat Regular">
                 <div class="row">
-                    <div class="col-xs-1 col-sm-6 col-md-10">
-                        <p style="font-family: Poppins SemiBold; color: whitesmoke">Navigate the page</p>
+                    <div class="col-xs-10 col-sm-10 col-md-10">
+                        <p style="font-weight: bold; color: #aaabbb">Navigate the page</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-1 col-sm-6 col-md-12">
+                    <div id="scroll-style"  class="col-xs-12 col-sm-12 col-md-12" style="overflow-y: auto; height: 80vh;">
                         <ul class="nav flex-column" style="flex-wrap: wrap">
                             <li class="nav-item">
                                 <a class="nav-link" href="#title-1" style="color: white; padding-bottom: 10px; font-family: Gotu Regular">
@@ -45,10 +45,10 @@
             </div>
 
         </div>
-        <div class="content" style="padding-right: 10px; font-family: Poppins Regular;">
+        <div class="content" style="font-family: Montserrat Regular;">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xs-8 col-sm-8 col-md-8">
+                    <div class="content-pad col-xs-8 col-sm-8 col-md-8">
                         <ArticleBodyPara
                                 style="font-size: 20px"
                                 para="Go is build upon the DRY (Don’t Repeat Yourself) principal, with the mission to facilitate clean code. Functions are the basis which allows code reuse, next is Packages.
@@ -148,7 +148,7 @@
                                 para="- End -"
                         />
                         <ArticleBodyTags
-                                :tags="['go lang', 'packages', 'structure']"
+                                :tags="['goroutines', 'channels']"
                         />
                         <ArticleBodyDivider />
 
@@ -163,11 +163,11 @@
                             <div class="col-xs-12 col-sm-12 col-md-12" style="padding-bottom: 20px">
                                 <ArticleCard
                                     published="Feb 01, 2020"
-                                    title="Everything you need to know about creating a RESTful Api in Go — Part I"
-                                    subtitle="detailed overview on go internal server"
-                                    :tags="['internal', 'server']"
-                                    card-no=4
-                                    article-no="article_v00003"
+                                    title="Everything you need to know about creating a RESTful Api in Go — Part V"
+                                    subtitle="detailed overview on consuming an external rest apis"
+                                    :tags="['3rd party', 'json', 'rest']"
+                                    card-no=8
+                                    article-no="article_v00007"
                                     card-style="background: linear-gradient(90deg, #141e30 0%, #243b55 100%); box-shadow: 0 2px 4px 0 rgba(0,0,0,.15); flex: 0 0 350px; flex-grow: 1; max-width: 300px; max-height: 350px; padding-bottom: 25px"
                                 />
                             </div>
@@ -197,15 +197,6 @@
                             <div class="col-xs-4 col-sm-4 col-md-4"></div>
                         </div>
 
-<!--                        <div style="position: absolute; width: 60%; height: 12%; background-color: rgb(226, 226, 218);"></div>-->
-<!--                        <div style="position: absolute; width: 60%; height: 12%; background-color: white; box-shadow: 0 0 30px rgba(16,14,23,.25); top: 15px; right: 85px;">-->
-<!--                            <div class="row">-->
-<!--                                <div class="col-sm-12 col-md-12 d-flex" style="justify-content: center; padding-top: 40%">-->
-<!--                                    <p>for sponsors</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
                     </div>
                 </div>
             </div>
@@ -214,15 +205,15 @@
 </template>
 
 <script>
-    import ArticleCard from '../ArticleCard'
-    import ArticleBodyPara from '../ArticleBodyPara'
-    import ArticleBodyQuote from '../ArticleBodyQuote'
-    import ArticleBodyCode from '../ArticleBodyCode'
-    import ArticleBodyTags from '../ArticleBodyTags'
-    import ArticleBodyDivider from '../ArticleBodyDivider'
+    import ArticleCard from '../../ArticleCard'
+    import ArticleBodyPara from '../../ArticleBodyPara'
+    import ArticleBodyQuote from '../../ArticleBodyQuote'
+    import ArticleBodyCode from '../../ArticleBodyCode'
+    import ArticleBodyTags from '../../ArticleBodyTags'
+    import ArticleBodyDivider from '../../ArticleBodyDivider'
 
     export default {
-        name: "ArticleBody_1",
+        name: "ArticleBody_7",
         components: {
             ArticleCard,
             ArticleBodyPara,
@@ -236,23 +227,68 @@
 
 <style scoped>
     @font-face {
-        font-family: "Poppins SemiBold";
-        src: url("../../../assets/Poppins-SemiBold.ttf");
-    }
-    @font-face {
-        font-family: "Poppins Regular";
-        src: url("../../../assets/Poppins-Regular.ttf");
-    }
-    @font-face {
-        font-family: "Gotu Regular";
-        src: url("../../../assets/Gotu-Regular.ttf");
+        font-family: "Montserrat Regular";
+        src: url("../../../../assets/Montserrat-Regular.ttf");
     }
 
-    .left-sidebar {
-        position: fixed; top: 46vh;  left: 0; max-width: 15%; max-height: 35%; border-right: 1px solid rgba(0,0,0,.07)
-        /*position: fixed; top:35vh; left: 0; width: 15%; height: 100%; background-color: rgb(29, 67, 84); border-right: 1px solid rgba(0,0,0,.07)*/
+    @media (max-width: 575.98px) {
+        /*Extra small devices (portrait phones, less than 576px)*/
+        .left-sidebar {
+            position: fixed; top: 60px;  left: 0; max-width: 0; max-height: 35%; border-right: 1px solid rgba(0,0,0,.07)
+        }
+        .content {
+            margin-top: 25px; margin-left: 0; height: 100%;
+        }
+        .content-pad {
+            padding-left: 10px;
+        }
     }
-    .content {
-        margin-top: 25px; margin-left: 15%; height: 100%; padding-left: 10px;
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        /*Small devices (landscape phones, 576px and up)*/
+        .left-sidebar {
+            position: fixed; top: 60px;  left: 0; max-width: 0; max-height: 35%; border-right: 1px solid rgba(0,0,0,.07)
+        }
+        .content {
+            margin-top: 25px; margin-left: 0; height: 100%; padding-right: 10px;
+        }
+        .content-pad {
+            padding-left: 10px;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        /*Medium devices (tablets, 768px and up)*/
+        .left-sidebar {
+            position: fixed; top: 60px;  left: 0; max-width: 15%; max-height: 35%; border-right: 1px solid rgba(0,0,0,.07)
+        }
+        .content {
+            margin-top: 25px; margin-left: 15%; height: 100%; padding-right: 10px;
+        }
+        .content-pad {
+            padding-left: 50px;
+        }
+    }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        /*Large devices (desktops, 992px and up)*/
+        .left-sidebar {
+            position: fixed; top: 60px;  left: 0; max-width: 15%; max-height: 35%; border-right: 1px solid rgba(0,0,0,.07)
+        }
+        .content {
+            margin-top: 25px; margin-left: 15%; height: 100%; padding-left: 10px; padding-right: 10px;
+        }
+        .content-pad {
+            padding-left: 50px;
+        }
+    }
+    @media (min-width: 1200px) {
+        /*Extra large devices (large desktops, 1200px and up)*/
+        .left-sidebar {
+            position: fixed; top: 60px;  left: 0; max-width: 15%; max-height: 35%; border-right: 1px solid rgba(0,0,0,.07)
+        }
+        .content {
+            margin-top: 25px; margin-left: 15%; height: 100%; padding-left: 10px; padding-right: 10px;
+        }
+        .content-pad {
+            padding-left: 50px;
+        }
     }
 </style>
