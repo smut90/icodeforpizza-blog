@@ -193,7 +193,9 @@
                                 para="This will create the basic framework including the following folder structure"
                         />
 
-                        <img alt="add 1st image">
+                        <div style="margin-bottom: 25px">
+                            <img class="img-fluid" src="../../../../assets/articles/A0-1.png" alt="image goes here">
+                        </div>
 
                         <ArticleBodyQuote
                                 section-style="border-left: 5px solid #7d7d69; background-color: #efefe8"
@@ -257,7 +259,9 @@
                                 para="Now that the files are ready, let’s start the server. Execute yarn start to start the server which will start the local server
                                 instance listening to default port 3000"
                         />
-                        <img alt="add 2nd image">
+                        <div style="margin-bottom: 25px">
+                            <img class="img-fluid" src="../../../../assets/articles/A0-2.png" alt="image goes here">
+                        </div>
                         <ArticleBodyQuote
                                 section-style="border-left: 5px solid #7d7d69; background-color: #efefe8"
                                 para-style="font-size: 18px; padding: 25px; font-family: Gotu Regular;"
@@ -370,7 +374,9 @@
                                 style="font-size: 18px"
                                 para="Restart the server to check the newly included changes"
                         />
-                        <img alt="add 3rd image">
+                        <div style="margin-bottom: 25px">
+                            <img class="img-fluid" src="../../../../assets/articles/A0-3.png" alt="image goes here">
+                        </div>
                         <ArticleBodyPara
                                 style="font-size: 18px"
                                 para="Similarly pressing Logout will logout the user."
@@ -462,7 +468,9 @@
                                 style="font-size: 18px"
                                 para="Now once logged in you’ll be able to see the POST request been sent."
                         />
-                        <img alt="add 4th image">
+                        <div style="margin-bottom: 25px">
+                            <img class="img-fluid" src="../../../../assets/articles/A0-4.png" alt="image goes here">
+                        </div>
                         <ArticleBodyPara
                                 style="font-size: 18px"
                                 para="Above serve response ({title: “foo”, body: “bar”, userId: 1, id: 101}) in the image confirms
@@ -523,10 +531,12 @@
                                 style="font-size: 18px"
                                 para="Once all the pieces are combined together, you’ll see something as follows."
                         />
-                        <img alt="add 5th image">
-                        <img alt="add 6th image">
-                        <img alt="add 7th image">
-                        <img alt="add 8th image">
+                        <div style="margin-bottom: 25px">
+                            <img class="img-fluid" src="../../../../assets/articles/A0-6.png" alt="image goes here">
+                        </div>
+                        <div style="margin-bottom: 25px">
+                            <img class="img-fluid" src="../../../../assets/articles/A0-7.png" alt="image goes here">
+                        </div>
                         <ArticleBodyPara
                                 style="font-size: 18px"
                                 para="The social login components which we created earlier, will popup, once you click on the red Login button."

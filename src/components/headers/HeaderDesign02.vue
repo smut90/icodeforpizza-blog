@@ -9,7 +9,7 @@
                             <p style="font-family: Gotu Regular; font-weight: 400; font-size: 18px; color: white">Tech Journey</p>
                         </div>
                         <div class="row" style="padding-bottom: 20px">
-                            <h1 style="font-family: Poppins SemiBold; color: white"><span>Let's code for free </span> <span>{{headerDisplayContent}}</span></h1>
+                            <h1 style="font-family: Poppins SemiBold; color: #df6443"><span>Let's code for free </span> <span>{{headerDisplayContent}}</span></h1>
                         </div>
                         <div class="row">
                             <p style="font-family: Gotu Regular; color: white; font-size: 25px; margin-bottom: 5px">A series of tech articles that will help, excel the techie in you</p>
@@ -241,7 +241,6 @@
                 if (numEntries > 0) {
                     endMillis = wordList[playBackIndex].timeout;
                     text = wordList[playBackIndex].text;
-                    console.log('HERE =>', text)
                 }
 
                 let id = setInterval(() => { frame();}, 1);
@@ -289,7 +288,7 @@
         min-height: 60vh;
         /*background-color: black;*/
         /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 15%, rgba(0,212,255,1) 100%);*/
-        background: linear-gradient(90deg, #1D4350 0%, #A43931 100%);
+        background: linear-gradient(90deg, #25274d 0%, #25274d 100%);
         border-radius: 0 0 80px 0;
     }
     .text-animate-1 {
